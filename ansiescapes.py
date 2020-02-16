@@ -83,6 +83,37 @@ scrollDown = _(ESC + 'T');
 clearScreen = _('\u001Bc');
 beep = _('\u0007');
 
+# Text attributes
+textNormal = '0'   # All attributes off
+textBold = '1'
+textUnderscore = '4'
+textBlink = '5'
+textReverse = '7'
+textConcealed = '8'
+
+# Foreground colors
+foregroundBlack = '30'
+foregroundRed = '31'
+foregroundGreen = '32'
+foregroundYellow = '33'
+foregroundBlue = '34'
+foregroundMagenta = '35'
+foregroundCyan = '36'
+foregroundWhite = '37'
+
+# Background colors
+backgroundBlack = '40'
+backgroundRed = '41'
+backgroundGreen = '42'
+backgroundYellow = '43'
+backgroundBlue = '44'
+backgroundMagenta = '45'
+backgroundCyan = '46'
+backgroundWhite = '47'
+
+def setGraphicsMode(*modes):
+    return _(ESC + ';'.join(modes) + 'm')
+
 def image(buf, opts = {}):
   ret = '\u001B]1337;File=inline=1'
 

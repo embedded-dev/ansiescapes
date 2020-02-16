@@ -27,6 +27,9 @@ setup(
     'Programming Language :: Python :: 3.3',
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
   ],
   keywords='ansi terminal console cli string tty escape escapes formatting shell xterm log logging command-line text vt100 sequence control code codes cursor iterm iterm2',
   py_modules=['ansiescapes']
